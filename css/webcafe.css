@@ -1,25 +1,34 @@
 @charset "utf-8";
-
+@import url('https://necolas.github.io/normalize.css/latest/normalize.css');
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
 /* 초기화 */
 *,*::before,*::after {
     box-sizing: border-box;
 }
 a{
     text-decoration: none;
+    color: inherit;
 }
-a:link{
+ html{
+     font-size: 10px;
+ }
+/* a:link{
 color: inherit;
 
 }a.visited{
     color: #999;
 
-}a:hover{
+}a:hover,a:focus{
     color: red;
-}
+} */
 body{
+    font-size: 1.4rem;
     margin: 0;
     color: #181818;
+    font-family: 'Spoqa Han Sans','Sans-serif';
+    font-weight:400;
 }
+
 .header,.visual,.main-content,.slogan,.footer{
     margin: 0 auto;
     width: 940px;
@@ -27,22 +36,42 @@ body{
 .header{
     box-sizing: border-box;
     background-color: pink;
+    position: relative;
+    padding: 10px 30px 50px 30px;
 }
 /* 로고 */
 .logo{
     margin: 0;
+    position: absolute;
+    top:50px;
+    left:70px;
 }
 /* 멤버링크 */
 .member{
 list-style-type:none;
 margin: 0;
 padding-left: 0;
+background-color: yellow;
+font-size: 0;
+text-align: right;
+/* display: flex;
+flex-direction: row;
+justify-content: flex-end;
+height: 100px;
+align-items: center; */
+
+}.member li{
+    display:inline-block;
+    background-color: aqua;
+    /* margin-left: -5px; 안됨*/
+    font-size: 1.4rem;
+    text-transform: uppercase;
+
 }
-.member a{
+/* .member a{
     
-}
+} */
 .visual{
-    
     background: lime;
     height: 120px;
 }
@@ -53,38 +82,32 @@ padding-left: 0;
     flex-direction: row;
     justify-content: space-between;
     padding: 30px;
-
-
 }
 .group{
     background-color: yellow;
-}.group1{
+
+}
+.group1{
    flex-basis: 250px;
    /* flex-grow: 2;
    flex-shrink: 1;
    flex: 50px 2 1; */
-
-   
 }
 .group2{
     flex-basis: 380px;
     /* flex-grow: 1; */
-    
 }
 .group3{
     flex-basis: 190px;
     /* flex-grow: 2; */
-
 }
 .slogan{
     background-color: orange;
     padding: 15px 0;
-
 }
 .footer-bg{
     background-color:  silver;
     padding: 15px 0;
-
 }
 .footer{
     background-color: yellow;
