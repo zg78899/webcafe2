@@ -4,18 +4,42 @@
 *,*::before,*::after {
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
+a:link{
+color: inherit;
+
+}a.visited{
+    color: #999;
+
+}a:hover{
+    color: red;
+}
 body{
     margin: 0;
+    color: #181818;
 }
 .header,.visual,.main-content,.slogan,.footer{
     margin: 0 auto;
     width: 940px;
 }
 .header{
-
     box-sizing: border-box;
     background-color: pink;
-    height: 10vh;
+}
+/* 로고 */
+.logo{
+    margin: 0;
+}
+/* 멤버링크 */
+.member{
+list-style-type:none;
+margin: 0;
+padding-left: 0;
+}
+.member a{
+    
 }
 .visual{
     
