@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+/* 초기화 */
+*,*::before,*::after {
+    box-sizing: border-box;
+}
 body{
     margin: 0;
 }
@@ -8,17 +12,44 @@ body{
     width: 940px;
 }
 .header{
+
     box-sizing: border-box;
     background-color: pink;
     height: 10vh;
 }
 .visual{
+    
     background: lime;
     height: 120px;
 }
 .main-content{
     min-height: 400px;
     background-color: skyblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+
+
+}
+.group{
+    background-color: yellow;
+}.group1{
+   flex-basis: 250px;
+   /* flex-grow: 2;
+   flex-shrink: 1;
+   flex: 50px 2 1; */
+
+   background-color: orange;
+}
+.group2{
+    flex-basis: 380px;
+    /* flex-grow: 1; */
+    background-color: aqua;
+}
+.group3{
+    flex-basis: 190px;
+    /* flex-grow: 2; */
 
 }
 .slogan{
