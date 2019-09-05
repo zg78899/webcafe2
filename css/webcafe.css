@@ -40,12 +40,12 @@ body{
    flex-shrink: 1;
    flex: 50px 2 1; */
 
-   background-color: orange;
+   
 }
 .group2{
     flex-basis: 380px;
     /* flex-grow: 1; */
-    background-color: aqua;
+    
 }
 .group3{
     flex-basis: 190px;
