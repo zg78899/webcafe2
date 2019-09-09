@@ -59,7 +59,7 @@ body{
 /* 로고 */
 .logo{
     margin: 0;
-    position: absolute;
+    position: absolute; 
     top:45px;
     left:70px;
 }
@@ -96,6 +96,7 @@ align-items: center; */
      */
 
 .member li:nth-child(n+2)::before{
+
     content: '\f142';
     font-family: "fontello";
     /* width:1em;
@@ -135,11 +136,18 @@ align-items: center; */
 
 }
 .menu-item{
+
     float: left;
-    line-height: 45px;
+
+    /* line-height: 45px; */
 
 }
+/* a 요소 인라인 */
 .btn-menu{
+    
+    display: block;
+    border-left: 1px solid rgba(255,255,255,0.5);
+    padding:15px 20px;
     font-weight: 700;
     font-size: 1.6rem;
     color: #fff;
