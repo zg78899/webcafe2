@@ -183,7 +183,9 @@ align-items: center; */
 .sub-menu li,.sub-menu1 a{
 
     display: inline-block;
-}.sub-menu1 a{
+
+}
+.sub-menu1 a{
     
     padding: 10px 0 10px 0;
     margin-right: 10px;
@@ -200,11 +202,42 @@ align-items: center; */
     right: 0;
 }
 
+/* 비주얼 */
+@keyframes textAni{
+    0%{
+        font-size:12px;
+        color: rgba(0,0,0,0);
+        /* padding: 0; */
+        /* margin: 0; */
+        /* top: 0;
+        left: 0; */
+        transform: translate(0,0);
+
+    }
+    100%{
+        font-size:24px;
+        color: rgba(0,0,0,1);
+        transform: translate(400px,75px);
+        /* padding: 75px 0 0 400px; */
+        /* top: 75px;
+        left: 400px; */
+    }
+}
 .visual{
+    position: relative;
     background: lime;
     height: 120px;
+
+}.visual-text{
+    position: absolute;
+    background-color: yellow;
+    animation-name: textAni;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
 }
 .main-content{
+
     min-height: 400px;
     background-color: skyblue;
     display: flex;
