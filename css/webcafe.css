@@ -62,6 +62,7 @@ body{
     position: absolute; 
     top:45px;
     left:70px;
+    /* z-index: 10; */
 }
 /* 멤버링크 */
 .member{
@@ -114,7 +115,7 @@ align-items: center; */
     
 } */
 .menu{
-
+    /* position: relative; */
     background-color: yellow;
     padding-left: 225px;
     list-style: none;
@@ -134,15 +135,19 @@ align-items: center; */
     display: block;
 
 
+/* }.menu > li{ */
+    
 }
 .menu-item{
-
     float: left;
+   position: relative;
     
 }
 /* a 요소 인라인 */
 .btn-menu{
-    
+    /* 박스의 높이 */
+    height: 45px;
+    /* 한줄의 라인 */
     line-height: 45px;
     display: block;
     border-left: 1px solid rgba(255,255,255,0.5);
@@ -172,9 +177,27 @@ align-items: center; */
     background: yellow;
     position: absolute;
     display: none;
+    white-space: nowrap;
 
-}.menu-act .sub-menu{
+}
+.sub-menu li,.sub-menu1 a{
+
+    display: inline-block;
+}.sub-menu1 a{
+    
+    padding: 10px 0 10px 0;
+    margin-right: 10px;
+}
+ .menu-act .sub-menu{
+
     display: block;
+    top: 47px;
+    
+}
+.sub-menu1,.sub-menu2,.sub-menu3{
+    left: 0;
+}.sub-menu4,.sub-menu5,.sub-menu6{
+    right: 0;
 }
 
 .visual{
