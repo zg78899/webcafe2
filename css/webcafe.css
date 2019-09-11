@@ -294,10 +294,12 @@ align-items: center; */
 }
 .group2{
     flex-basis: 380px;
+    
     /* flex-grow: 1; */
 }
 .group3{
     flex-basis: 190px;
+    background: #ef8426;
     /* flex-grow: 2; */
 }
 /* 로그인 */
@@ -460,11 +462,6 @@ color: red;
 }
  */
 
- 
-
-
-
-   
 
 /* }.login-heading{
     color: yellow;
@@ -546,6 +543,91 @@ color: red;
   .term-list-brief{
     line-height: 1.5;
   }
+  /* 검색폼 */
+
+  .search-form{
+      background:#ccc linear-gradient(#ccc,#eee);
+      padding: 15px 25px 10px;
+      /* border-width: 1px 1px 0 1px;
+      border-style: solid solid none solid;
+      border-color: #aaa #aaa transparent #aaa; */
+      border: 1px solid #aaa;
+      border-bottom: 0;
+      border-radius: 15px 15px 0 0;
+      
+      
+    }
+    .search-form fieldset{
+        border: 0;
+        padding: 0;
+        margin: 0;
+        /* background: #e8bc2e; */
+        /* display: flex; */
+        
+    }.container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex: center;
+        text-align: center;
+        
+    }label[for^="search"],input[type^="search"],.btn-search{
+        vertical-align: middle;
+        
+    }
+    input[type^="search"]{
+        height: 24px;
+        border: 1px solid #aaa;
+        padding: 1px 1px 1px 5px;
+        width: 200px;
+        border-radius: 3px;
+        margin: 0 2px;
+    }
+    .btn-search{
+        background: #121212;
+        color: #fff;
+        font: inherit;
+        border: 1px solid #aaa;
+        border-radius: 3px;
+        padding: 0 10px;
+        height: 24px;
+        font-size: 1.3rem;
+        
+    }
+    
+  /* .search-form{
+      background: linear-gradient(#ccc,#eee);
+      padding: 10px 5px;
+      text-align: center;
+      border-radius: 10px 10px 0 0;
+      border: 1px solid #aaa;
+      border-bottom: 0;
+      
+      
+
+  }.search-form fieldset{
+      border: 0;
+      display: inline-block;
+    
+
+  }
+  #search{
+
+      border-radius: 5px;
+      width: 200px;
+      height: 24px;
+  }
+  .btn-search{
+      background: #181818;
+      color: #fff;
+      border-radius: 5px;
+      padding:0 10px;
+      border: 1px solid #aaa;
+      height: 24px;
+      
+
+
+  } */
 
 .slogan{
     background-color: orange;
