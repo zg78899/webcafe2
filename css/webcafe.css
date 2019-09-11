@@ -570,7 +570,7 @@ color: red;
         justify-content: space-between;
         flex: center;
         text-align: center;
-        
+
     }label[for^="search"],input[type^="search"],.btn-search{
         vertical-align: middle;
         
@@ -594,6 +594,113 @@ color: red;
         font-size: 1.3rem;
         
     }
+    /* 공지사항  밑 자료실 */
+    .board{
+        background: yellow;
+        position: relative;
+
+    } .board ul,.board .more{
+        display: none;
+
+    }.tab-act ul,.tab-act .more{
+        display: block !important;
+    }
+    .board ul{
+        background: pink;
+        margin: 20px 0;
+        padding: 45px 0 0 0;
+        list-style: none;
+
+    }.board li{
+        background: lime;
+        margin: 8px 0;
+        display: flex;
+        
+
+
+        
+    }.board li a{
+        background: silver;
+        /* width: 100%; */
+        width: 270px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+    
+    }.board time{
+        background: orange;
+        margin-left: auto;
+
+        
+    }
+    .board .more{
+        background: skyblue;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+    }
+    .notice-heading,.pds-heading{
+        margin: 0;
+        font-weight: 400;
+        font-size: 1em;
+        background: skyblue;
+        position: absolute;
+        top: 0;
+
+
+    }.notice-heading{
+      left: 0;
+
+    }.pds-heading{
+      left: 73px;
+    }
+    .tab {
+        display: block;
+        border: 1px solid #aaa;
+        border-radius: 5px 5px 0 0;
+        background: #ccc linear-gradient(#ccc,#eee);
+        padding: 5px 10px;
+        color: #666;
+
+    }.tab-act .tab{
+        color: #ef8426;
+        border-color: #ef8426 #ef8426 #fff #ef8426;
+        background: #fff;
+    }
+    .more::before{
+      color: hsla(110,70%20%,1);
+    }
+    
+    /* }.tab-act{
+        background: #e8bc2e;
+        position: relative;
+       
+    }.notice-list{
+        background: pink;
+        
+
+    } .more{
+        background: #666;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .notice-list li{
+        list-style-type: none;
+    }.pds{
+        background: #aaa;
+        position: absolute;
+        
+
+    } */
+
+   
+   
+    
+    
     
   /* .search-form{
       background: linear-gradient(#ccc,#eee);
