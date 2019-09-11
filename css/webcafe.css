@@ -13,7 +13,7 @@ a{
     color: inherit;
 }
 /* 숨김 콘텐츠 */
-.a11y-hidden{
+.a11y-hidden,legend {
     background-color: red;
     position: absolute;
     width: 1px;
@@ -43,6 +43,7 @@ body{
     color: #181818;
     font-family: 'Spoqa Han Sans','Sans-serif';
     font-weight:400;
+    background: gray;
 }
 
 .header,.visual,.main-content,.slogan,.footer{
@@ -275,16 +276,16 @@ align-items: center; */
 .main-content{
 
     min-height: 400px;
-    background-color: skyblue;
+    background-color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 30px;
 }
-.group{
-    background-color: yellow;
 
-}
+    /* background-color: yellow; */
+
+
 .group1{
    flex-basis: 250px;
    /* flex-grow: 2;
@@ -299,6 +300,253 @@ align-items: center; */
     flex-basis: 190px;
     /* flex-grow: 2; */
 }
+/* 로그인 */
+/* section{
+    width: 250px;
+    height:160px;
+    box-sizing: border-box;
+} */
+
+
+
+.login{
+    background: #ef8426 radial-gradient(circle at right top,#f7cc31,#ef8426);
+    border-radius:5px;
+    padding: 10px;
+    box-shadow: 5px 5px 0 0 #666;
+
+}.login-heading{
+    margin: 0;
+    text-indent: 10px;
+    /* background: pink; */
+    font-size: 1.5rem;
+    color: #ff0;
+
+}.login-form{
+    background: #fff;
+    border-radius: 5px 5px 0 0 ;
+    margin-top: 10px;
+    padding: 10px 10px 0 10px;
+
+}.login-form fieldset{
+    border: 0;
+    padding: 0 0 10px 0;
+    
+    position: relative;
+    border-bottom: 1px solid #aaa;
+}
+.login-form label{
+    width: 4em;
+    display: inline-block;
+}
+.login-form input{
+    
+    width: 90px;
+    height: 22px;
+    border: 1px solid #aaa;
+    padding: 1px 1px 1px 5px;
+}.user-pw{
+    margin-top: 5px;
+
+}
+.btn-login{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ef8426;
+    background: #e8bc2e;
+    padding: 0;
+    color: #fff;
+    border-radius: 3px;
+    font: inherit;
+}
+.sign{
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    margin: 0;
+    
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}.sign li{
+    font-size: 1.3rem;
+}.sign li::before{
+    color: #ef8426;
+}
+/* 유효성검사 배너 */
+.validation-list{
+    /* background:yellow; */
+    list-style: none;
+    padding-left:0;
+    margin: 25px 0 20px 0;
+    
+}.validation-list li{
+    margin: 10px 0;
+    
+}
+.validation-list a{
+    background: url('./images/validation_icon.png') no-repeat 20px 50%,linear-gradient(#ccc,#eee)repeat 0 0;
+    display: block;
+    border: 1px solid #aaa;
+    border-radius: 30px;
+    padding: 8px 0 10px 45px;
+
+/* }.term{
+    background:linear-gradient(#aaa,#eee);
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid #aaa;
+    clear: both;
+    margin: 
+}
+.term-heading{
+    font-size: 1.6rem;
+    padding-left: 20px;
+}.term-list{
+    
+    padding: 20px;
+}.term-list-subject{
+    color: #296897;
+    float: right;
+    width: 60%;
+
+}
+.term-list-thumbnail{
+    margin: 0;
+    float: left;
+    
+   
+    
+}.term-list-brief{
+    margin-inline-start: 0;
+    float: right;
+    width: 60%;
+    
+    
+} */
+    
+
+
+/* .validation{
+    margin-top: 20px;
+}
+.validation-list{
+    list-style: none;
+    padding: 10px;
+    
+    
+
+}
+.validation-list li:nth-child(1){
+    background:linear-gradient(to top,#fff,#aaa);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px 20px 20px 20px;
+
+}
+.validation-list li:nth-child(2){
+    background: linear-gradient(to top,#fff,#aaa);
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px 20px 20px 20px;
+}.validation-list li:nth-child(1):hover{
+color: red;
+}.validation-list li:nth-child(2):hover{
+    color: red;
+}
+ */
+
+ 
+
+
+
+   
+
+/* }.login-heading{
+    color: yellow;
+    padding: 0 20px;
+
+}
+
+.login-form,.sign{
+    background: #fff;
+    margin: 0;
+
+
+}.login-form{
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid gray;
+  display: inline-block;
+
+}.btn-login{
+    float: right;
+    color: #fff;
+    padding: 20px 20px;
+    background: #ef8426 radial-gradient(circle at right top,#f7cc31,#ef8426);
+}
+.sign{
+    list-style: none;
+    border-radius: 0 0 5px 5px;
+    padding: 0 20px;
+    display: inline;
+    
+
+}} */
+}.term{
+    background:#ccc linear-gradient(#ccc, #eee);
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 10px 15px;
+  }
+  .term-heading{
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .term-list{
+    margin: 10px 0 0 0;
+  }
+  .odd, .even{
+    margin-top: 15px;
+  }
+  .odd::after, .even::after{
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .odd .term-list-subject, .odd .term-list-brief{
+    float: right;
+  }
+  .odd .term-list-thumbnail{
+    float: left;
+  }
+  .even .term-list-subject, .even .term-list-brief{
+    float: left;
+  }
+  .even .term-list-thumbnail{
+    float: right;
+  }
+  
+  
+  .term-list-thumbnail, .term-list-brief{
+    margin: 0;
+  }
+  .term-list-subject, .term-list-brief{
+    width: 145px;
+  }
+  .term-list-subject{
+    margin: -2px 0 5px 0;
+  }
+  .term-list-thumbnail img{
+    vertical-align: top;
+  }
+  .term-list-brief{
+    line-height: 1.5;
+  }
+
 .slogan{
     background-color: orange;
     padding: 15px 0;
