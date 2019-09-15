@@ -379,6 +379,8 @@ align-items: center; */
 }.sign li::before{
     color: #ef8426;
 }
+
+
 /* 유효성검사 배너 */
 .validation-list{
     /* background:yellow; */
@@ -396,6 +398,11 @@ align-items: center; */
     border: 1px solid #aaa;
     border-radius: 30px;
     padding: 8px 0 10px 45px;
+
+
+}.validation-list a:hover,.validation-list a:focus{
+    color: #b60b0b;
+
 
 /* }.term{
     background:linear-gradient(#aaa,#eee);
@@ -672,6 +679,87 @@ color: red;
     }
     .more::before{
       color: hsla(110,70%20%,1);
+
+
+
+
+    }.news{
+        position: relative;
+        /* background: #e8bc2e; */
+
+    }.news::before{
+        content: "";
+        position: absolute;
+        top: 35px;
+        left: 0;
+        width: 80%;
+        height: 1px;
+        background: linear-gradient(to right, #aaa, #eee);
+        background-color: #aaa;
+        
+
+    }
+    .news-story{
+        color:  #ef8426;
+        /* background: pink; */
+        margin: 0;
+        font-size: 1.5rem;
+        padding: 10px 10px 10px 0;
+        
+        
+
+    }.new-story1{
+        /* background: #666; */
+    }
+    .news-body{
+        height: 130px;
+        /* background: #ef8426; */
+        display: block;
+        float: right;
+        width: 250px;
+        
+    }
+    .body1-body{
+        width: 130px;
+        height: 130px;
+    }
+    
+    .name{
+        padding-top: 20px;
+        margin: 0;
+        font-size: 1.3rem;
+        font-weight:700;
+    }
+    .news .more{
+        margin-top: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        /* background: lime; */
+        /* border: 1px solid black; */
+    }
+    .more::before{
+        color: hsla(110,70%20%,1);
+  
+
+    
+        }    .new-site{
+        padding-top: 20px;
+        height: 130px;
+        margin: 0;
+        width: 130;
+        /* background: purple; */
+        float: left;
+        
+
+    }.new-site figcaption{
+        padding:18px 0 0 0; 
+        text-align: center;
+
+    }.new-site img{
+    
+        box-shadow: 0 15px 18px 1px #aaa;
+
     }
     
     /* }.tab-act{
