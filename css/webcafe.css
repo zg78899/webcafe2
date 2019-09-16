@@ -130,8 +130,8 @@ align-items: center; */
 
 
 }.menu::after{
-    content: "";
     background-color: lime;
+    content: "";
     clear:both;
     display: block;
 
@@ -603,7 +603,7 @@ color: red;
     }
     /* 공지사항  밑 자료실 */
     .board{
-        background: yellow;
+        /* background: yellow; */
         position: relative;
 
     } .board ul,.board .more{
@@ -613,13 +613,13 @@ color: red;
         display: block !important;
     }
     .board ul{
-        background: pink;
+        /* background: pink; */
         margin: 20px 0;
         padding: 45px 0 0 0;
         list-style: none;
 
     }.board li{
-        background: lime;
+        /* background: lime; */
         margin: 8px 0;
         display: flex;
         
@@ -627,7 +627,7 @@ color: red;
 
         
     }.board li a{
-        background: silver;
+        /* background: silver; */
         /* width: 100%; */
         width: 270px;
 
@@ -637,13 +637,13 @@ color: red;
         
     
     }.board time{
-        background: orange;
+        /* background: orange; */
         margin-left: auto;
 
         
     }
     .board .more{
-        background: skyblue;
+        /* background: skyblue; */
         position: absolute;
         top: 0;
         right: 0;
@@ -653,7 +653,7 @@ color: red;
         margin: 0;
         font-weight: 400;
         font-size: 1em;
-        background: skyblue;
+        /* background: skyblue; */
         position: absolute;
         top: 0;
 
@@ -681,11 +681,9 @@ color: red;
       color: hsla(110,70%20%,1);
 
 
-
-
-    }.news{
+    /* }.news{
         position: relative;
-        /* background: #e8bc2e; */
+        background: #e8bc2e;
 
     }.news::before{
         content: "";
@@ -696,24 +694,20 @@ color: red;
         height: 1px;
         background: linear-gradient(to right, #aaa, #eee);
         background-color: #aaa;
-        
 
-    }
-    .news-story{
+    }.news-story{
         color:  #ef8426;
-        /* background: pink; */
+        background: pink;
         margin: 0;
         font-size: 1.5rem;
         padding: 10px 10px 10px 0;
-        
-        
 
     }.new-story1{
-        /* background: #666; */
+        
     }
     .news-body{
         height: 130px;
-        /* background: #ef8426; */
+        
         display: block;
         float: right;
         width: 250px;
@@ -735,8 +729,8 @@ color: red;
         position: absolute;
         top: 0;
         right: 0;
-        /* background: lime; */
-        /* border: 1px solid black; */
+        
+        
     }
     .more::before{
         color: hsla(110,70%20%,1);
@@ -748,7 +742,6 @@ color: red;
         height: 130px;
         margin: 0;
         width: 130;
-        /* background: purple; */
         float: left;
         
 
@@ -758,9 +751,9 @@ color: red;
 
     }.new-site img{
     
-        box-shadow: 0 15px 18px 1px #aaa;
+        box-shadow: 0 15px 18px 1px #aaa; 
 
-    }
+    }  */
     
     /* }.tab-act{
         background: #e8bc2e;
@@ -822,7 +815,83 @@ color: red;
       
 
 
-  } */
+  /* } 
+  *새소식 */
+    }
+  .news{
+      
+      margin-top: 20px;
+      position: relative;
+   
+  }.news::before{
+      content: "";
+      background: linear-gradient(to right #aaa,#fff);
+      background-color: #aaa;
+      position:absolute;
+      top: 30px;
+      left: 0;
+      width: 80%;
+      height: 1px;
+  
+  }.news-heading{
+      margin: 0;
+      font-size: 1.5rem;
+      color: #ef8426;
+
+  }.news-article{
+      
+      padding-left: 130px;
+      position: relative;
+      min-height: 105px;
+  }
+  .news-link{
+      
+      display: block;
+
+  }.news-article-subject{
+      margin: 30px 0 0 0;
+      
+      font-size:1.4rem;
+      font-weight: 450;
+      
+      
+  }.news-article-date{
+      
+      display: block;
+      margin:5px 10;      
+      
+      
+  }.news-article-brief{
+      
+      margin: 10px 5px;
+      line-height: 1.5;
+      
+      
+  }.new-article-thumbnail{
+      
+      margin: 0;
+      position: absolute;
+      top: 3px;
+      left: 0;
+  }.new-article-thumbnail img{
+      box-shadow: 0 15px 15px 0 #aaa;
+
+  }.new-article-thumbnail figcaption{
+      
+      text-align: center;
+      margin-top: 15px;
+  }
+
+  
+  .more{
+      position:absolute;
+      top: 0;
+      right: 0;
+  }
+  /* 신규이벤트 및 관련 사이트 */
+  .gradient-box{
+      background: yellow;
+  }
 
 .slogan{
     background-color: orange;
