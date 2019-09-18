@@ -1,0 +1,180 @@
+@charset "utf-8";
+@import url('https://necolas.github.io/normalize.css/latest/normalize.css');
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+@import url('./fontello.css');
+/* 초기화 */
+
+*,*::before,*::after {
+    box-sizing: border-box;
+    
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* 숨김 콘텐츠 */
+.a11y-hidden,legend {
+    background-color: red;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+
+}
+
+ html{
+     font-size: 10px;
+ }
+/* a:link{
+color: inherit;
+
+}a.visited{
+    color: #999;
+
+}a:hover,a:focus{
+    color: red;
+} */
+body{
+    
+    font-size: 1.4rem;
+    margin: 50px;
+    color: #181818;
+    font-family: 'Spoqa Han Sans','Sans-serif';
+    font-weight:400;
+    background: #fff;
+}
+/* 텝 ui */
+.board{
+    /* background: yellow; */
+    position: relative;
+
+}.tab-list,.board-list{
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
+}
+
+.tab-list{
+    /* background: pink; */
+   
+    /* display: flex; */
+
+
+}
+.tab-list li{
+    /* background: lime; */
+    float: left;
+
+}.tab-list::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+[role="tab"]{
+    background: #ccc linear-gradient(#ccc,#eee);
+    display: block;
+    padding: 5px 10px ;
+    border: 1px solid #aaa;
+    color: #aaa;
+    border-radius: 5px 5px 0 0;
+
+}
+[role="tab"][aria-selected="true"]{
+    background: #fff;
+    border-color: hsla(20,70%,60%,1),hsla(20,70%,60%,1),#fff,hsla(20,70%,60%,1); 
+    color: hsla(20,70%,60%,1); 
+    
+}
+.tab-content{
+    /* background: skyblue; */
+    /* clear: both; */
+}.notice,.pds{
+    display: none;
+}
+.tab-content-act{
+    display: block!important;
+}.board-list{
+    margin-top: 20px;
+
+}.board-list li{
+    /* background: pink; */
+    display: flex;
+    margin: 5px;
+
+}.board time{
+    margin-left: auto;
+}.board-list a{
+    /* background: lime; */
+    width: 285px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.more{
+    position: absolute;
+    top: -5px;
+    right: 0;
+    padding: 5px;
+    
+
+}
+.more::before{
+    color: rgb(24, 117, 6);
+}
+
+/* .board{
+    
+    background: yellow;
+    position: relative;
+
+}
+.board .tab-list{
+    background: silver;
+
+}
+.tab-content ul,.tab-content.more{
+    display: none;
+
+}.tab-content-act ul,.tab-content-act .more{
+
+    display: block!important;
+
+}.tab-content ul{
+    background: skyblue;
+}.tab-content li{
+    background: lime;
+}.tab-content a{
+    background: orange;
+}.tab-content .more{
+    position:absolute;
+    top: 0;
+    right: 0;
+
+}
+.tab-content time{
+    background: pink;
+}
+#tab1,#tab2{
+    margin: 0;
+    font-weight: 400;
+    font-size: 1em;
+    background: skyblue;
+    position: absolute;
+    top: 0;
+
+}#tab1{
+    left: 0;
+
+}#tab2{
+    left: 73px;
+}
+.tab-list{
+    display: block;
+    border: 1px solid
+
+} */

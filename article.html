@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>W3C의 새소식</title>
+<style>
+.news{
+
+/* background:palegreen; */
+position: relative;
+width: 380px;
+margin-top: 20px;
+
+
+
+}.news::before{
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 0;
+    height: 1px;
+    width: 80%;
+    background: linear-gradient(to right #aaa,#fff);
+    background-color: #aaa;
+}
+.news-heading{
+    margin: 0;
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: orangered;
+    /* background: yellow; */
+
+
+}.news-link,.more{
+    /* background: pink; */
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    
+    
+}
+.news-item{
+    margin:20px 0 0 0;
+    /* background: skyblue; */
+    position: relative;
+    padding-left: 130px;
+    /* width: 250px; */
+
+}.news-title{
+    margin: 0;
+    font-size: 1rem;
+    /* background: lime; */
+
+}.news-date{
+    
+    /* background: red; */
+
+}.news-brief{
+    /* background:silver; */
+
+
+}.news-thumbnail{
+    height: 130px;
+    margin: 0;
+    /* background: purple; */
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}.news-thumbnail img{
+
+    box-shadow: 0 15px 20px 1px #aaa;
+
+}.news-thumbnail figcaption{
+    padding-top: 15px;
+    text-align: center;
+}
+.more{
+    /* background-color: orange; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+
+}
+
+</style>
+</head>
+<body>
+    <section class="news">
+        <h2 class="news-heading">새소식</h2>
+        <a href="" class="news-link">
+            <article class="news-item">
+                <h3 class="news-title">W3C가 새롭게 리뉴얼 되었습니다.</h3>
+                <time class="news-date" datetime="2019-05-31T13:53:45">2019.05.31</time>
+                <p class="news-brief">디자인 및 다양한 view 환경을 고려하여 구성되어 있으며, 기본보다 최신 정보 및 새발자를 위한 기술 가이드도 찾기 쉽도록 구성되었습니다.</p>
+
+                <figure class="news-thumbnail">
+                    <img src="./images/news.gif" alt="W3C 사이트의 새로운 리뉴얼">
+                        <figcaption>W3C 리뉴얼</figcaption>
+                </figure>
+            </article>
+        </a>
+        <a href="" class=".icon-plus more" title="새소식" aria-labelledby="news">더보기</a>
+
+    </section>
+    
+</body>
+</html>

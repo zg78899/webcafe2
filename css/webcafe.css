@@ -340,6 +340,7 @@ align-items: center; */
 .login-form label{
     width: 4em;
     display: inline-block;
+    cursor: pointer;
 }
 .login-form input{
     
@@ -850,7 +851,6 @@ color: red;
 
   }.news-article-subject{
       margin: 30px 0 0 0;
-      
       font-size:1.4rem;
       font-weight: 450;
       
@@ -868,11 +868,11 @@ color: red;
       
       
   }.new-article-thumbnail{
-      
       margin: 0;
       position: absolute;
       top: 3px;
       left: 0;
+
   }.new-article-thumbnail img{
       box-shadow: 0 15px 15px 0 #aaa;
 
@@ -881,16 +881,101 @@ color: red;
       text-align: center;
       margin-top: 15px;
   }
-
-  
   .more{
       position:absolute;
       top: 0;
       right: 0;
   }
+  
   /* 신규이벤트 및 관련 사이트 */
   .gradient-box{
-      background: yellow;
+      background: #ccc linear-gradient(#ccc,#eee);
+      border: 1px solid #aaa;
+      border-radius: 10px;
+  }.point-color{
+      color: #ef8426;
+  }
+  .event,.related{
+      
+      margin: 0 10px;
+  }.event{
+    background: yellow;
+    position: relative;
+  }
+  .related{
+      background: lime;
+      
+  }.event-heading,.related-heading{
+      margin:  10px 0;
+      font-size: 1.5rem;
+      
+  }.event p{
+      margin: 10px 0;
+  }
+  .event img{
+      border: 1px solid #aaa;
+      box-shadow: 5px 5px 0 0 #aaa;
+  }.event em{
+      font-style: normal;
+  }.btn-event{
+      background: pink;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 18px;
+      overflow: hidden;
+  }.btn-event button{
+      background-image:  url("./images/back_forward.png");
+      background-repeat: no-repeat;
+      background-color:transparent; 
+      padding: 18px 0 0 0;
+      width: 19px;
+      height: 100%;
+      border: 0;
+      cursor: pointer;
+      
+  }.btn-event-next{
+      background-position: 100% 0;
+  }
+  /* .event{
+      background: pink;
+      position: relative;
+  }
+  .orange{
+      color: #ef8426;
+  }
+  .event-heading{
+      
+      font-size: 1.5rem;
+      margin: 0;
+
+  }#event-detail{
+      text-align: center;
+      
+  }#event-detail img{
+      box-shadow: 5px 5px 0 0 #aaa;
+  }
+  .btn-event{
+      background: orange;
+      width: 55px;
+      position: absolute;
+      top: 0;
+      right:0;
+      text-indent: 100px;
+      white-space: nowrap;
+      text-overflow: hidden;
+      background: url("./images/back_forward.png") no-repeat;
+
+  }.btn-event-prev{
+      width:19px;
+      top: 0;
+      right: 55px;
+
+  }.btn-event-next{
+      width: 19px;
+      top: 0;
+      right: 0; */
+
   }
 
 .slogan{
