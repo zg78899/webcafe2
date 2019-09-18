@@ -24,7 +24,13 @@ a{
     white-space: nowrap;
 
 }
+/* clearfix float 이슈를 해결하기 위한 선언 */
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
 
+}
  html{
      font-size: 10px;
  }
@@ -888,16 +894,21 @@ color: red;
   }
   
   /* 신규이벤트 및 관련 사이트 */
+
+
   .gradient-box{
+
       background: #ccc linear-gradient(#ccc,#eee);
       border: 1px solid #aaa;
       border-radius: 10px;
+
   }.point-color{
       color: #ef8426;
   }
   .event,.related{
       
       margin: 0 10px;
+      
   }.event{
     
     position: relative;
@@ -932,6 +943,7 @@ color: red;
       /* height: 100%; */
       width: calc(100% - 4px);
       position: absolute;
+
       left: 2px;
       top: 50%;
       transform: translateY(-50%);
@@ -940,31 +952,31 @@ color: red;
       /* left: 0; */
       /* right: 0; */
       /* bottom: 0; */
-      
-      
-  
   }
-  .event-heading,.related-heading{
+  .event-heading,.related-heading,.favorite-heading{
+
       margin:  10px 0;
       font-size: 1.5rem;
       
   }.event p{
+
       margin: 10px 0;
       line-height: 1.5;
   }
   .event img{
       border: 1px solid #aaa;
       box-shadow: 5px 5px 0 0 #aaa;
+
   }.event em{
       font-style: normal;
 
   }.btn-event{
+
       background: pink;
       position: absolute;
       top: 0;
       right: 0;
       
-
   }.btn-event button{
       
       background-color:transparent;
@@ -979,6 +991,7 @@ color: red;
       overflow: hidden;
       
   }.btn-event button::after{
+
       content: "";
       position: absolute;
       top: 0;
@@ -1005,7 +1018,7 @@ color: red;
 }.related li a{
     width: 100%;
      */
-  }.
+  
   /* .event{
       background: pink;
       position: relative;
@@ -1045,8 +1058,137 @@ color: red;
       top: 0;
       right: 0; */
 
-  }
+  
+  }.favorite{
+      
+    padding: 0 10px;
+    margin-top: 20px;
+    background: #ccc linear-gradient(#ccc,#eee);
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    position: relative;
 
+  }.favorite-list{
+     
+      padding-left: 0;
+      list-style: none;
+      counter-reset: 0;
+
+  }.favorite-list li{
+      counter-increment: number;
+      /* background: yellow; */
+      margin: 8px 0;
+      position: relative;
+      
+      /* font-size: 20px; */
+      /* display: flex;
+      align-items: center; */
+      
+
+  }.favorite-list li::before{
+      content: counter(number);
+      color: #fff;
+      font-size: 1.2rem;
+      background: #999;
+      border-radius: 3px;
+      padding: 2px 5px;
+      margin-right: 5px ;
+      display: inline-block;
+
+      /* float: left; */
+
+  }.favorite-list a{
+      /* background: #ef8426; */
+      display: inline-block;
+      vertical-align: middle;
+      /* float: left; */
+  }
+  .favorite-list em{
+      /* background: lime url("./images/rank.png")no-repeat; */
+      background:  url("./images/rank.png")no-repeat;
+      /* margin-left: auto; */
+      font-style: normal;
+      width: 9px;
+      height: 11px;
+      text-indent: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      /* float: right; */
+      margin-top: -5px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+
+  }em.stop{
+      background-position: 0 50%;
+
+
+  }em.down{
+      background-position: 0 100%;
+
+  }.favorite-more{
+      position:absolute;
+      top: 10px;
+      right: 10px;
+  }.favorite-more::before{
+      color: hsla(110, 70%, 50%, 1);
+  }
+  /* }.no1::before{
+      content: "1";
+
+  }.no2::before{
+    content: "2";
+  }.no3::before{
+    content: "3";
+  }.no4::before{
+    content: "4";
+  } */
+  /* }.faovorite-heading span{
+      color: #ef8426;
+
+  }.favorite-heading{
+      font-size: 1.5rem;
+      
+  }.favorite-list{
+      list-style: none;
+      background: pink;
+      padding-left: 0;
+      
+     
+
+  }.favorite-list::before{
+
+      border: 1px solid black;
+      content:
+      background-color: #666;
+  }
+  
+  .favorite-list li{
+   background: purple;
+   position: relative;
+   display: flex;
+
+   
+
+  }.favorite-list a{
+      background: skyblue;
+      display: block;
+      
+     
+  }.favorite-list em{
+      align-items: flex-end;
+      background: #e8bc2e;
+      margin-left:auto;
+      background: url("./images/rank.png") no-repeat;
+      
+    
+  }
+  .favorite-more{
+      position: absolute;
+      top: 0;
+      right: 0; */
+
+  
 .slogan{
     background-color: orange;
     padding: 15px 0;
