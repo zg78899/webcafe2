@@ -918,6 +918,7 @@ color: red;
       border-top: 1px solid #aaa;
       
   }.related-list{
+
       background: #fff;
       padding-left: 0;
       list-style: none;
@@ -1063,9 +1064,11 @@ color: red;
       
     padding: 0 10px;
     margin-top: 20px;
+
     background: #ccc linear-gradient(#ccc,#eee);
     border: 1px solid #aaa;
     border-radius: 10px;
+
     position: relative;
 
   }.favorite-list{
@@ -1075,6 +1078,7 @@ color: red;
       counter-reset: 0;
 
   }.favorite-list li{
+
       counter-increment: number;
       /* background: yellow; */
       margin: 8px 0;
@@ -1086,6 +1090,7 @@ color: red;
       
 
   }.favorite-list li::before{
+
       content: counter(number);
       color: #fff;
       font-size: 1.2rem;
@@ -1188,6 +1193,7 @@ color: red;
       top: 0;
       right: 0; */
 
+  /* 슬로건 */
   
 .slogan{
     background-color: orange;
